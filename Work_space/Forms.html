@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Формы</h1>
+
+    <form action="">
+        <div>
+            <label for="name">Введите имя</label>
+            <input type="text" id ="name" value="Имя" readonly>
+        </div>
+        <!-- Просто создаем ТЕКСТОВОЕ полле для ввода айдишка которого "name"
+             cо значением по умолчанию "Имя" доступное только для чтения -->
+
+        <div>
+            <label for="email">Ваша почта</label>
+            <input type="email" id ="email" placeholder="введите почту">
+        </div>
+        <!-- Создаем поле ДЛЯ ВВОДА ПОЧТЫ с подсказкой в самом поле "введите почту" -->
+
+        <div>
+            <label for="old">Введите возраст от 18 до 36</label>
+            <input type="number" id ="old" min="18" max="36" value="18">
+        </div>
+        <!-- Создаем форму где выбирается именно число
+            (вводится текстом или вписывается) с минимальным значением 18,
+             максимальным 36 с установленным по умолчанию 18 -->
+        <div>
+            <label for="pass">Пароль</label>
+            <input type="password" id ="pass">
+        </div>
+        <!-- создаем поле для ввода пароля, где написание будет скрыто звездочками -->
+        <div>
+            <label for="sex">Выберите ваш пол
+                <select name="" id="sex">
+                    <option value="male">Спермобак</option>
+                    <option value="female" selected>Сиськодура</option>
+                    <option value="other">Голубой американский боевой вертолёт Appachi</option>
+                </select>
+            </label>
+        </div>
+        <!-- Здесь создается полле выбора выбранных ответов где предустановлен вариант сиськодура со своими айдишниками -->
+
+        <div>
+            <label for="trigger">Укажите уровень вашей <br> тревожности от 1 до 10</label>
+            <input type="range" id ="trigger" min="0" max="10" step="1">
+        </div>
+        <!-- Здесь создается ползунок "range" cо значениями от нуля до 10 с шагом выбора 1 -->
+        <div>
+            <label for="date_start">Выберите день, когда вы к нам попали</label>
+            <input type="date" id ="date_start">
+        </div>
+        <!-- Создается поле ввода даты с подключенным календарем(выбирается или вписывается) -->
+
+        <div>
+            <label for="pants">Какого цвета на вас трусы?</label>
+            <input type="color" id ="pants">
+        </div>
+        <!-- поле выбора цвета -->
+
+        <div>
+            <label for="invite">Где вы о нас узнали?</label>
+                <input type="radio" name ="invite">На тусе                
+                <input type="radio" name ="invite">От эксгибициониста              
+                <input type="radio" name ="invite">Во снах            
+                <input type="radio" name ="invite">Рандомайзер сайтов
+                <input type="radio" name ="invite">Нагадала цыганка       
+        </div>
+        <!-- Создается список вариантов, где выбор ПЕРЕКЛЮЧАЕТСЯ между вариантами -->
+
+        <div>
+            <label for="zoo">Любимые животные</label>    
+                <input type="checkbox" name ="zoo">Мощный конь                
+                <input type="checkbox" name ="zoo">элегантная кошка             
+                <input type="checkbox" name ="zoo">Верный пес            
+                <input type="checkbox" name ="zoo">Беззащитный котенок
+                <input type="checkbox" name ="zoo">Цыганка
+        </div>
+        <!-- Создается список чекбоксов, где можно выбирать неоходимые варианты -->
+        <hr>
+
+        <div>
+            <label for="messege">Сообщение</label>
+            <br>
+            <textarea name="Poligon" id="messege" cols="25" rows="10" maxlength="100" wrap="hard"></textarea>
+        </div>
+        <!-- Создается текстовое поле для ввода сообщения, размерами 25 на 10 с максимальной длинной 100символов и дестким переносом( размер поля неизменим) -->
+        <input type="reset" value="Ввести заново" >
+        <!-- кнопка для сброса введенных данных  -->
+        <br>
+ 
+        <hr>
+        
+        <input type="submit" value="Отправить форму">
+        <button type="submit">Второй вариант отправить форму</button>
+
+     
+
+    </form>
+</body>
+</html>
